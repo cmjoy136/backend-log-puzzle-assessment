@@ -43,7 +43,7 @@ def read_urls(filename):
         full_url = 'http://' + host_name + url
         if full_url not in urls:
             urls.append(full_url)
-    return sorted(urls)
+    return sorted(urls, key=url_sort_key)
     # animal_code.google.com
 # http://code.google.com/something/puzzle-animal-baaa.jpg
 
